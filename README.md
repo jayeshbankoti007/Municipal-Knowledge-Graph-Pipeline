@@ -1,14 +1,14 @@
 # Municipal Knowledge Graph Pipeline
 
-[cite_start]This project is a proof-of-concept pipeline that ingests raw transcripts from city council meetings and transforms them into a structured, interactive Knowledge Graph (KG)[cite: 2]. [cite_start]The goal is to create a foundation for a system that allows journalists, researchers, and organizations to easily query and analyze municipal activities[cite: 3].
+This project is a proof-of-concept pipeline that ingests raw transcripts from city council meetings and transforms them into a structured, interactive Knowledge Graph (KG). The goal is to create a foundation for a system that allows journalists, researchers, and organizations to easily query and analyze municipal activities.
 
-[cite_start]The pipeline automates the entire process from raw text to a visualized graph, containerized with Docker for easy and reproducible execution[cite: 10, 27].
+The pipeline automates the entire process from raw text to a visualized graph, containerized with Docker for easy and reproducible execution.
 
 ---
 
 ## 🚀 How to Run the Project
 
-[cite_start]The entire pipeline is containerized using Docker and can be executed with a single command[cite: 10, 29].
+The entire pipeline is containerized using Docker and can be executed with a single command.
 
 ### Prerequisites
 
@@ -93,7 +93,7 @@ The pipeline is designed to be modular, scalable, and easily expandable. It cons
 
 ## ✨ Bonus Task: Bill Outcome Prediction
 
-[cite_start]The optional task to predict bill outcomes was successfully implemented[cite: 38].
+The optional task to predict bill outcomes was successfully implemented.
 
 * **Approach:** This was integrated directly into the entity extraction step. The LLM prompt in `extract.py` explicitly instructs the model to act as a political analyst. For each bill, it must predict an outcome (`APPROVED`, `REJECTED`, or `UNCERTAIN`), provide a confidence level, and state its reasoning.
 * **Contextual Factors:** The prompt guides the LLM to base its prediction on key indicators from the transcript, such as:
