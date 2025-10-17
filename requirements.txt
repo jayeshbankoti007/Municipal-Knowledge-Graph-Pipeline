@@ -1,0 +1,11 @@
+langchain
+langchain-openai
+pydantic
+python-dotenv
+networkx
+matplotlib
+tiktoken
+tqdm
+pandas
+spacy
+plotly

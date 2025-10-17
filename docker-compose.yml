@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  kg-pipeline:
+    build: .
+    container_name: municipal-kg-pipeline
+    volumes:
+      - ./data:/app/data:ro
+      - ./output:/app/output
+    environment:
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
+    command: python -m src.pipeline
